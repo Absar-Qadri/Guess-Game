@@ -1,0 +1,204 @@
+@import url("https://fonts.googleapis.com/css?family=Press+Start+2P&display=swap");
+body {
+  height: 100vh;
+  background-color: #222;
+  color: #eee;
+  font-family: "Press Start 2P", sans-serif;
+  overflow: hidden;
+}
+main {
+  height: 65vh;
+  display: flex;
+  padding-top: 10rem;
+  justify-content: space-between;
+}
+.top {
+  display: flex;
+  justify-content: space-between;
+}
+.top p {
+  width: 18rem;
+  font-size: 0.89rem;
+}
+.retry-btn {
+  height: 3.8rem;
+  width: 10rem;
+  font-family: inherit;
+  font-size: 1.1rem;
+  margin: 1rem;
+  cursor: pointer;
+}
+header h1 {
+  text-align: center;
+  margin-bottom: 3rem;
+}
+header {
+  height: 35vh;
+  width: 100%;
+  border-bottom: 7px solid #eee;
+  margin: 0;
+}
+
+.logos {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
+}
+.white-logo {
+  display: flex;
+  background-color: #eee;
+  color: #2f2e2e;
+  height: 8rem;
+  width: 9rem;
+  justify-content: center;
+  align-items: center;
+  font-size: 3rem;
+}
+
+.left-side {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  width: auto;
+  align-items: center;
+}
+.left-side input {
+  background-color: inherit;
+  border: 0.2rem solid #eee;
+  height: 6rem;
+  width: 15rem;
+  text-align: center;
+  font-size: 4rem;
+  color: #eee;
+  font-family: inherit;
+}
+.check {
+  height: 3.8rem;
+  width: 10rem;
+  font-family: inherit;
+  font-size: 1.1rem;
+  margin: 1rem;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: rgb(194, 190, 190);
+}
+
+.right-side {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  font-size: 1.2rem;
+  width: 52rem;
+}
+
+.right-side p {
+  margin: 0.7rem;
+  white-space: nowrap;
+}
+.right-side h4 {
+  margin-top: 0;
+  margin-bottom: 3.5rem;
+}
+
+@media screen and (max-width: 480px) {
+  header {
+    height: auto;
+    text-align: center;
+    padding: 2rem 0;
+  }
+
+  .top {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .retry-btn {
+    width: 80%;
+    margin: 1rem 0;
+  }
+
+  .top p {
+    width: auto;
+    margin-bottom: 1rem;
+  }
+
+  .logos {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .white-logo {
+    height: 6rem;
+    width: 6rem;
+    font-size: 2rem;
+  }
+
+  main {
+    flex-direction: column;
+    align-items: center;
+    height: auto;
+    padding: 1rem 0 5rem 0;
+  }
+  .left-side {
+    margin: 0;
+  }
+
+  .left-side input {
+    width: 80%;
+    height: 2rem;
+  }
+
+  .check {
+    width: 80%;
+    height: 2rem;
+    margin: 1rem 0;
+  }
+
+  .right-side {
+    align-items: center;
+    width: 80%;
+    font-size: 0.8rem;
+  }
+  .right-side h4 {
+    margin: 0;
+    font-size: 1rem;
+  }
+}
+
+@media screen and (min-width: 481px) and (max-width: 1024px) {
+  header {
+    padding: 2rem 0;
+  }
+
+  .retry-btn {
+    width: 8rem;
+  }
+
+  .white-logo {
+    height: 7rem;
+    width: 7rem;
+    font-size: 2.5rem;
+  }
+
+  main {
+    padding: 5rem 0;
+  }
+
+  .left-side input {
+    width: 13rem;
+    font-size: 3rem;
+  }
+
+  .check {
+    width: 8rem;
+  }
+
+  .right-side {
+    width: 30rem;
+  }
+}
